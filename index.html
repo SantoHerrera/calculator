@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+   <form name="calculator">
+      <table>
+         <tr>
+            <td colspan="4">
+               <input type="text" name="display" id="display">
+               <input type="text" id="display2">
+               <input type="text" id="display3">
+            </td>
+         </tr>
+         <tr>  
+            
+            <td><input type="button" name="one" value="1" onclick="calc.num(1)"></td>
+            <td><input type="button" name="two" value="2" onclick="calc.num(2)"></td>
+            <td><input type="button" name="three" value="3" onclick="calc.num(3)"></td>
+            <td><input type="button" class="operator" name="plus" value="+" onclick="calc.arithmetic('+')"></td>
+         </tr>
+         <tr>
+            <td><input type="button" name="four" value="4" onclick="calc.num(4)"></td>
+            <td><input type="button" name="five" value="5" onclick="calc.num(5)"></td>
+            <td><input type="button" name="six" value="6" onclick="calc.num(6)"></td>
+            <td><input type="button" class="operator" name="minus" value="-" onclick="calc.arithmetic('-')"></td>
+         </tr>
+         <tr>
+            <td><input type="button" name="seven" value="7" onclick="calc.num(7)"></td>
+            <td><input type="button" name="eight" value="8" onclick="calc.num(8)"></td>
+            <td><input type="button" name="nine" value="9" onclick="calc.num(9)"></td>
+            <td><input type="button" class="operator" name="times" value="x" onclick="calc.arithmetic('*')"></td>
+         </tr>
+         <tr>
+            <td><input type="button" id="clear" name="clear" value="c" onclick="calc.clearEverything()"></td>
+            <td><input type="button" name="zero" value="0" onclick="calc.num(0)"></td>
+            <td><input type="button" name="doit" value="=" onclick="calc.total()"></td>
+            <td><input type="button" class="operator" name="div" value="/" onclick="calc.arithmetic('/')"></td>
+         </tr>
+      </table>
+   </form>
+
+   <script src="main.js"></script>
+</body>
+
+</html>
+
+<!--onclick="calculator.display.value = eval(calculator.display.value)-->
